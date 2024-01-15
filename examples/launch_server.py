@@ -1,26 +1,3 @@
-# Unofficial Lambda Labs Python SDK
-
-A Python library for interacting with the Lambda Labs Public API
-
-### Getting Started
-
-1. Install with pip:
-
-```bash
-pip install lambdalabs-python
-```
-
-2. [Generate an API key](https://cloud.lambdalabs.com/api-keys)
-
-3. Set the `LAMBDALABS_API_KEY` environment variable:
-
-```bash
-export LAMBDALABS_API_KEY="secret_xxx"
-```
-
-4. Example for orderung a server:
-
-```python
 import os
 from lambdalabs import LambdaLabsClient
 
@@ -48,7 +25,3 @@ for instance_type in available_instance_types:
 # quantity = 1
 # name = 'lambda-test-1'
 lambdalabs.instances.launch(region_name, instance_type_name, ssh_key_names, quantity, name)
-```
-### Examples
-
-Checkout the `/examples` directory for more examples on how to use the Python SDK.
