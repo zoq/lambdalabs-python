@@ -18,10 +18,10 @@ for instance_type in available_instance_types:
     print(instance_type)
 
 # Launch the selected instance, change the parameters accordingly:
-# region_name = 'us-tx-1'
-# instance_type_name = 'gpu_8x_a100_80gb_sxm4'
-# ssh_key_names = ['my-ssh-key']
-# file_system_names = []
-# quantity = 1
-# name = 'lambda-test-1'
+region_name = 'us-tx-1'
+instance_type_name = 'gpu_8x_a100_80gb_sxm4'
+ssh_key_names = ['my-ssh-key']
+file_system_names = []
+quantity = 1
+name = 'lambda-test-1'
 lambdalabs.instances.launch(region_name, instance_type_name, ssh_key_names, quantity, name)
